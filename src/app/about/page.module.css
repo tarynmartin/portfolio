@@ -1,6 +1,29 @@
-.aboutSection {
-    padding: 50px 0;
-    text-align: center;
-    background: #f7f7f7;
-    height: 100vh;
+.header {
+  font-size: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.column1 {
+  width: 48%;
+}
+
+.aboutInfo {
+  width: 48%;
+}
+
+.aboutInfoSection {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.aboutInfoSection strong {
+  text-transform: capitalize;
 }
