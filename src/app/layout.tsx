@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import Headshot from './headshot.jpg';
+import { Inter, Agbalumo } from 'next/font/google'
+import styles from './page.module.css';
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const agbalumo = Agbalumo({ subsets:[], weight: ['400']});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +19,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={agbalumo.className}>
+      <main className={styles.main}>
+        <div className={styles.header}>
+          <h1>Taryn Martin</h1>
+        </div>
+        <div className={styles.mainContent}>
+          <div className={styles.headshotContainer}>
+            <Image src={Headshot} alt="Headshot" fill={true} className={styles.headshot}/>
+          </div>
+          <div className={styles.content}>
+            {children}
+          </div>
+        </div>
+      </main>
+      </body>
     </html>
   )
 }
