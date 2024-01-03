@@ -14,18 +14,20 @@
 .mainContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1.5rem
 }
 
 .headshotContainer {
-  width: 47%;
-  height: 100%;
+  width: 43%;
+  height: 85%;
   position: absolute;
   overflow: hidden;
 }
 
 .headshot {
-  object-fit: cover;
+  background-image: url(./headshot.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 
 .content {

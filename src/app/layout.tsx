@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image';
-import Headshot from './headshot.jpg';
 import { Inter, Agbalumo } from 'next/font/google'
 import styles from './page.module.css';
 import './globals.css'
@@ -26,7 +24,7 @@ export default function RootLayout({
         </div>
         <div className={styles.mainContent}>
           <div className={styles.headshotContainer}>
-            <Image src={Headshot} alt="Headshot" fill={true} className={styles.headshot}/>
+            <div className={styles.headshot} />
           </div>
           <div className={styles.content}>
             {children}
