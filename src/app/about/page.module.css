@@ -27,3 +27,13 @@
 .aboutInfoSection strong {
   text-transform: capitalize;
 }
+
+.programmingSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  max-width: 42rem;
+}
