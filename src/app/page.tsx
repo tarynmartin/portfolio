@@ -1,8 +1,9 @@
+import About from './about/page.js';
+
 export default function Home() {
   return (
     <div>
-      <h1>Taryn Martin</h1>
-      <h2>Frontend Software Engineer</h2>
+      <About />
       {/* button - contact me */}
     </div>
   )

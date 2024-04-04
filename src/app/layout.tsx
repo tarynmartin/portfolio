@@ -21,6 +21,7 @@ export default function RootLayout({
       <main className={styles.main}>
         <div className={styles.header}>
           <h1>Taryn Martin</h1>
+          <h2>Frontend Software Engineer</h2>
         </div>
         <div className={styles.mainContent}>
           <div className={styles.headshotContainer}>
