@@ -1,0 +1,35 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  align-items: center;
+}
+
+.link {
+  height: 34px;
+  padding-top: 5px;
+}
+
+.activeLink {
+  background-color: black;
+  color: white;
+  padding: 5px 6px 7px 6px;
+  border-radius: 8px;
+  /* transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0); */
+}
+
+@media screen and (max-width: 1025px) {
+  .navBar {
+    width: 12%;
+  }
+}
+
+@media screen and (max-width: 860px) { 
+  .navBar {
+    width: 35%;
+    /* margin-top: 1rem; */
+  }
+}
