@@ -8,16 +8,25 @@
 }
 
 .header {
-  height: 6rem;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.logoContainer {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .mainContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .headshotContainer {
-  width: 43%;
+  width: 32%;
   height: 85%;
   position: absolute;
   overflow: hidden;
@@ -34,10 +43,16 @@
   grid-column: 2;
   width: 100%;
   overflow-y: auto;
-  height: 90vh;
+  height: 85vh;
 }
 
 @media screen and (max-width: 860px) {
+  .header {
+    flex-direction: column;
+    height: 10rem;
+    padding-bottom: 1rem;
+  }
+
   .mainContent {
     grid-template-columns: 1fr;
   }

@@ -1,10 +1,9 @@
-import About from './about/page.js';
+import React from 'react'
 
 export default function Home() {
   return (
     <div>
-      <About />
-      {/* button - contact me */}
+      <h1>Hi!</h1>
     </div>
   )
 }

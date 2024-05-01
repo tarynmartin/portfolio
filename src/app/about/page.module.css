@@ -1,3 +1,9 @@
+.aboutContainer {
+  height: 84%;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
 .aboutHeader {
   font-size: 1.75rem;
   padding-bottom: 1.75rem;

@@ -8,8 +8,8 @@ import Paper from '@mui/material/Paper';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // components
-import Pill from '../components/Pill/Pill';
-import Accordion from '../components/Accordion/Accordion';
+import Pill from '../../components/Pill/Pill';
+import Accordion from '../../components/Accordion/Accordion';
 // data
 import { aboutInfoCopy, aboutInfoData, programmingInfo, experienceInfo, educationInfo } from './utils';
 
@@ -19,7 +19,7 @@ const About = () => {
   const [expanded, setExpanded] = useState('');
 
   return (
-    <div>
+    <div className={styles.aboutContainer}>
       <h1 className={styles.aboutHeader}>About Me</h1>
       <div className={raleway.className}>
         <section className={styles.section}>
@@ -59,7 +59,7 @@ const About = () => {
       <div className={raleway.className}>
         {experienceInfo.map((info) => {
           return (
-            <Accordion expanded={expanded} setExpanded={setExpanded} info={info} />
+            <Accordion expanded={expanded} setExpanded={setExpanded} info={info} key={info.panel}/>
           )
         })}
       </div>
@@ -68,7 +68,7 @@ const About = () => {
         <section className={styles.educationSection}>
           {educationInfo.map((info) => {
             return (
-              <Paper elevation={6}>
+              <Paper elevation={6} key={info.key}>
                 <div className={styles.educationCard}>
                   <h2>{info.school}</h2>
                   <div className={styles.schoolDetails}>
@@ -79,12 +79,6 @@ const About = () => {
               </Paper>
             )
           })}
-        </section>
-      </div>
-      <h1 className={styles.header}>Hobbies/Interests</h1>
-      <div className={raleway.className}>
-        <section className={styles.section}>
-          {/* traveling, baking, crochet, exercise, BJJ, spending time with friends, art */}
         </section>
       </div>
     </div>

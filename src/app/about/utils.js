@@ -143,15 +143,18 @@ export const educationInfo = [
     school: 'Turing School of Software & Design',
     focus: 'Front End Development',
     timePeriod: 'May 2020 - November 2020',
+    key: 'turing'
   },
   {
     school: 'University of Massachusetts - Amherst',
     focus: 'M.Ed School Counseling',
     timePeriod: 'September 2009 - May 2012',
+    key: 'umass',
   },
   {
     school: 'Juniata College',
     focus: 'BS Psychology',
     timePeriod: 'September 2005 - May 2009',
+    key: 'juniata',
   },
 ]
