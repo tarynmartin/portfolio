@@ -1,0 +1,19 @@
+.textFadeContainer {
+  display: flex;
+  gap: 0.35rem
+}
+
+.textFadeList {
+  list-style-type: none;
+}
+
+.textFadeItem {
+  color: #088c8c;
+  opacity: 0;
+  animation: fade 4s linear infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}

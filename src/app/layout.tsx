@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Inter, Agbalumo } from 'next/font/google'
 import DataObjectIcon from '@mui/icons-material/DataObject';

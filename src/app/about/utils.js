@@ -1,12 +1,8 @@
 import styles from './page.module.css';
 
 // icons
-import { FaReact } from "react-icons/fa6";
-import { FaVuejs } from "react-icons/fa6";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaHtml5 } from "react-icons/fa6";
-import { IoLogoCss3 } from "react-icons/io";
-import { FaSass } from "react-icons/fa6";
+import { FaReact, FaVuejs, FaHtml5, FaSass } from "react-icons/fa6";
+import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
 import { FiFigma } from "react-icons/fi";
 import { TbBrandCypress } from "react-icons/tb";
 import { SiJest } from "react-icons/si";
