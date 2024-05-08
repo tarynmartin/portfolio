@@ -23,6 +23,7 @@
 .mainContent {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 1rem;
 }
 
 .headshotContainer {
@@ -44,6 +45,7 @@
   width: 100%;
   overflow-y: auto;
   height: 85vh;
+  background-color: rgb(8 140 140 / 0.03);
 }
 
 .home {
