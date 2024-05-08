@@ -11,7 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Pill from '../../components/Pill/Pill';
 import Accordion from '../../components/Accordion/Accordion';
 // data
-import { aboutInfoCopy, aboutInfoData, programmingInfo, experienceInfo, educationInfo } from './utils';
+import { aboutInfoCopy, aboutInfoData, programmingInfo, experienceInfo, educationInfo } from './data';
 
 const raleway = Raleway({ subsets: ['latin-ext'] });
 

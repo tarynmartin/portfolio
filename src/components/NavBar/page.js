@@ -11,6 +11,7 @@ export default function NavBar() {
     <nav className={styles.navBar}>
       <Link href="/" className={pathname === '/' ? styles.activeLink : styles.link}>Home</Link>
       <Link href="/about" className={pathname === '/about' ? styles.activeLink : styles.link}>About</Link>
+      <Link href="/contact" className={pathname === '/contact' ? styles.activeLink : styles.link}>Contact</Link>
     </nav>
   )
 }
