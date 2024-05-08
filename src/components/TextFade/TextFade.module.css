@@ -1,0 +1,47 @@
+.textFadeContainer {
+  display: flex;
+  gap: 0.35rem
+}
+
+.textFadeList {
+  list-style-type: none;
+}
+
+.textFadeItem:before {
+  color: #088c8c;
+  opacity: 1;
+  animation: fade 16s linear infinite;
+  width: 5rem;
+  content: 'Dedication';
+}
+
+@keyframes fade {
+  0%, 25% {
+    opacity: 0;
+    content: 'Dedication'
+  }
+  12.5% {
+    opacity: 1;
+  }
+  26%, 50% {
+    opacity: 0;
+    content: 'Creativity';
+  }
+  37.5% {
+    opacity: 1;
+  }
+  51%, 75% {
+    opacity: 0;
+    content: 'Experience';
+  }
+  62.5% {
+    opacity: 1;
+  }
+  76%, 100% {
+    opacity: 0;
+    content: 'Quality';
+  } 
+  87.5% {
+    opacity: 1;
+  }
+}
