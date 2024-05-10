@@ -6,3 +6,9 @@
   height: 80vh;
   justify-content: center;
 }
+
+@media screen and (max-width: 860px) {
+  .contactContainer {
+    height: 73vh;
+  }
+}

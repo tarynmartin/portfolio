@@ -6,9 +6,7 @@
 }
 
 .link {
-  height: 34px;
-  padding-top: 5px;
-  margin: 0 8px;
+  padding: 5px 6px 7px 6px;
 }
 
 .activeLink,
@@ -21,13 +19,13 @@
 
 @media screen and (max-width: 1025px) {
   .navBar {
-    width: 12%;
+    /* width: 12%; */
   }
 }
 
 @media screen and (max-width: 860px) { 
   .navBar {
-    width: 35%;
+    /* width: 35%; */
     /* margin-top: 1rem; */
   }
 }
