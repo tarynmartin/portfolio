@@ -11,7 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Pill from '../../components/Pill/Pill';
 import Accordion from '../../components/Accordion/Accordion';
 // data
-import { aboutInfoCopy, aboutInfoData, programmingInfo, experienceInfo, educationInfo } from './utils';
+import { aboutInfoCopy, aboutInfoData, programmingInfo, experienceInfo, educationInfo } from './data';
 
 const raleway = Raleway({ subsets: ['latin-ext'] });
 
@@ -22,7 +22,7 @@ const About = () => {
     <div className={styles.aboutContainer}>
       <h1 className={styles.aboutHeader}>About Me</h1>
       <div className={raleway.className}>
-        <section className={styles.section}>
+        <section className={styles.aboutSection}>
           <p className={styles.column1}>{aboutInfoCopy}</p>
           <div className={styles.aboutInfo}>
             {
@@ -45,7 +45,7 @@ const About = () => {
         <Grid container spacing={2}>
           {programmingInfo.map((info) => {
             return (
-              <Grid item xs={4} key={info.text}>
+              <Grid item xs={6} sm={4} key={info.text}>
                 <Pill text={info.text} image={info.image} />
               </Grid>
             )

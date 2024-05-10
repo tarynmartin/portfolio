@@ -8,7 +8,7 @@
 }
 
 .textFadeItem:before {
-  color: #088c8c;
+  color: #057a7a;
   opacity: 1;
   animation: fade 16s linear infinite;
   width: 5rem;

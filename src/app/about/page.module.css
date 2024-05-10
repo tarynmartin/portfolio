@@ -21,11 +21,11 @@
   align-items: center;
 }
 
-.section {
+.section,
+.aboutSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 2rem;
 }
 
 .column1 {
@@ -113,4 +113,19 @@
 .educationCard h4 {
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 860px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .column1,
+  .aboutInfoSection,
+  .aboutInfo {
+    width: 100%;
+  }
 }

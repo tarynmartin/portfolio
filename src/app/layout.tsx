@@ -20,7 +20,7 @@ export default function RootLayout({
       <main className={styles.main}>
         <div className={styles.header}>
           <div className={styles.logoContainer}>
-            <DataObjectIcon sx={{ fontSize: 90, color: '#088c8c' }}/>
+            <DataObjectIcon sx={{ fontSize: 90, color: '#057a7a' }}/>
             <div>
               <h1>Taryn Martin</h1>
               <h2>Web Development</h2>

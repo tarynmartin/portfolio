@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
+import React from 'react';
 
-export const metadata: Metadata = { title: 'About Blah', description: 'About page' }
+export const metadata: Metadata = { title: 'About', description: 'About page' }
 
 const AboutLayout = ({ children }: {
   children: React.ReactNode
