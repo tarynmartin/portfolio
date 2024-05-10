@@ -22,10 +22,10 @@ const theme = createTheme({
   },
 })
 
-const ThemedButton = ({ text, isDisabled, startIcon, endIcon }) => {
+const ThemedButton = ({ text, isDisabled, startIcon, endIcon, onClick }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Button variant="contained" disabled={isDisabled} startIcon={startIcon} endIcon={endIcon}>
+      <Button variant="contained" disabled={isDisabled} startIcon={startIcon} endIcon={endIcon} onClick={onClick} type="submit">
         {text}
       </Button>
     </ThemeProvider>

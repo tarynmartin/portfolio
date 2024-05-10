@@ -8,17 +8,15 @@
 .link {
   height: 34px;
   padding-top: 5px;
+  margin: 0 8px;
 }
 
-.activeLink {
-  background-color: black;
+.activeLink,
+.link:hover {
+  background-color: #057a7a;
   color: white;
   padding: 5px 6px 7px 6px;
   border-radius: 8px;
-  /* transition-duration: 350ms;
-  transition-timing-function: ease-in-out;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0); */
 }
 
 @media screen and (max-width: 1025px) {
