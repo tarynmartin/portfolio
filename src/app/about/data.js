@@ -8,7 +8,7 @@ import { TbBrandCypress } from "react-icons/tb";
 import { SiJest } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 
-export const aboutInfoCopy = <span>Hi! I&apos'm Taryn. I am a frontend software engineer who loves to grow and learn more about the front end. I specialize in React and Vue, and love to play with designs and creating the best user experience.  <br /> <br /> I have over 3 years of experience working on the front end, and many more years of working experience. I love to use my varied work and life experiences to create the best product possible.</span>
+export const aboutInfoCopy = <span>Hi! I'm Taryn. I am a frontend software engineer who loves to grow and learn more about the front end. I specialize in React and Vue, and love to play with designs and creating the best user experience.  <br /> <br /> I have over 3 years of experience working on the front end, and many more years of working experience. I love to use my varied work and life experiences to create the best product possible.</span>
 
 export const aboutInfoData = {
   name: 'Taryn Martin',
@@ -76,7 +76,7 @@ export const experienceInfo = [
     details:
     <ul className={styles.detailsList}>
       <li>Utilized Vue and SCSS to create and deliver features</li>
-      <li>Implemented features based on Product and Design requirements for our client&apos's SaaS application</li>
+      <li>Implemented features based on Product and Design requirements for our client's SaaS application</li>
       <li>dentified and triaged bugs, tech debt, and polishes to ensure a seamless user experience</li>
       <li>Provided feedback through code reviews and discussions with team</li>
     </ul>,
