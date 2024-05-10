@@ -7,7 +7,7 @@ import Joi from 'joi';
 // MUI imports
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import ThemedButton from '../Button/button';
+import ThemedButton from '../Button/Button';
 import Snackbar from '@mui/material/Snackbar';
 import SendIcon from '@mui/icons-material/Send';
 

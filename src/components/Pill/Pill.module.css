@@ -8,4 +8,11 @@
   background-color: lightgray;
   padding: 1.5rem 1rem;
   border-radius: 40px;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 860px) {
+  .pill {
+    margin: 1.5rem;
+  }
 }

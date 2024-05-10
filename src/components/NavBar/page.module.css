@@ -3,6 +3,7 @@
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
+  padding-bottom: 0.75rem;
 }
 
 .link {
@@ -15,17 +16,4 @@
   color: white;
   padding: 5px 6px 7px 6px;
   border-radius: 8px;
-}
-
-@media screen and (max-width: 1025px) {
-  .navBar {
-    /* width: 12%; */
-  }
-}
-
-@media screen and (max-width: 860px) { 
-  .navBar {
-    /* width: 35%; */
-    /* margin-top: 1rem; */
-  }
 }
