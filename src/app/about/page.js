@@ -44,7 +44,7 @@ const About = () => {
         <div className={styles.programmingSection}>
           {programmingInfo.map((info) => {
             return (
-                <Pill text={info.text} image={info.image} />
+                <Pill text={info.text} image={info.image} key={info.text} />
             )
           })}
         </div>
