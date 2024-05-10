@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { Metadata } from 'next'
 import { Fraunces } from 'next/font/google'
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import styles from './page.module.css';
@@ -8,6 +9,8 @@ import './globals.css'
 import NavBar from '../components/NavBar/NavBar';
 
 const fraunces = Fraunces({ subsets: ['latin'], display: 'swap' });
+
+export const metadata: Metadata = { title: { template: '%s | Taryn Martin', default: 'Taryn Martin'}, description: 'Home page', }
 
 export default function RootLayout({
   children,
