@@ -1,7 +1,5 @@
 .aboutContainer {
   height: 84%;
-  margin: 0 1rem;
-  padding: 1rem;
 }
 
 .aboutHeader {
@@ -48,12 +46,9 @@
 
 .programmingSection {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 2rem;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  max-width: 42rem;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .detailsList {
@@ -113,6 +108,25 @@
 .educationCard h4 {
   font-size: 1rem;
   font-weight: 300;
+}
+
+.jobLink:link {
+  color: #057a7a;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.jobLink:visited { 
+  color: #034545; 
+}
+
+.jobLink:hover,
+.jobLink:active {
+  color: #05379c
+}
+
+.jobLink:active {
+  color: #023333
 }
 
 @media screen and (max-width: 860px) {

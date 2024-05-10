@@ -1,0 +1,43 @@
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+.servicesListContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.servicesInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 30%;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1356px) {
+  .servicesInfo {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .servicesInfo {
+    width: 100%;
+  }
+  
+}

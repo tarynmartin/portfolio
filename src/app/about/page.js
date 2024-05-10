@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import styles from './page.module.css'
 import { Raleway } from 'next/font/google';
-import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -42,15 +41,13 @@ const About = () => {
         <a href="https://github.com/tarynmartin" target="__blank"><GitHubIcon fontSize="large"/></a>
       </div>
       <div className={raleway.className}>
-        <Grid container spacing={2}>
+        <div className={styles.programmingSection}>
           {programmingInfo.map((info) => {
             return (
-              <Grid item xs={6} sm={4} key={info.text}>
                 <Pill text={info.text} image={info.image} />
-              </Grid>
             )
           })}
-        </Grid>
+        </div>
       </div>
       <div className={styles.headerContainer}>
         <h1 className={styles.header}>Experience</h1>

@@ -18,7 +18,6 @@ export const aboutInfoData = {
   email: 'taryn@duck.com'
 }
 
-// is there other info I can add?
 export const programmingInfo = [
   { text: 'React', image: <FaReact size={32} /> },
   { text: 'Vue', image: <FaVuejs size={32} /> },
@@ -28,7 +27,7 @@ export const programmingInfo = [
   { text: 'SASS', image: <FaSass size={32} />},
   { text: 'Figma', image: <FiFigma size={32} /> },
   { text: 'Cypress', image: <TbBrandCypress size={32} /> },
-  // { text: 'Jest', image: <SiJest size={32} />},
+  { text: 'Jest', image: <SiJest size={32} />},
   { text: 'Bootstrap', image: <BsBootstrap size={32} /> },
 ]
 
@@ -38,7 +37,7 @@ export const experienceInfo = [
     <div>
       <div>
         <strong>Frontend Web Developer: </strong>
-        <a href="https://www.fairwinds.com/" target='__blank'>Fairwinds</a>
+        <a href="https://www.fairwinds.com/" target='__blank' className={styles.jobLink}>Fairwinds</a>
       </div>
       <div>
         <span>June 2021 - November 2023</span>
@@ -68,7 +67,7 @@ export const experienceInfo = [
     <div>
       <div>
         <strong>Freelance Software Engineer: </strong>
-        <a href="https://www.crunchybananas.com/" target='__blank'>Crunchy Bananas</a>
+        <a href="https://www.crunchybananas.com/" target='__blank' className={styles.jobLink}>Crunchy Bananas</a>
       </div>
       <div>
         <span>April 2021 - July 2021</span>
@@ -88,7 +87,7 @@ export const experienceInfo = [
     <div>
       <div>
         <strong>Student Support Specialist: </strong>
-        <a href="https://www.turing.edu/" target='__blank'>Turing School of Software & Design</a>
+        <a href="https://www.turing.edu/" target='__blank' className={styles.jobLink}>Turing School of Software & Design</a>
       </div>
       <div>
         <span>February 2021 - June 2021</span>

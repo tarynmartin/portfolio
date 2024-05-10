@@ -8,15 +8,16 @@
 }
 
 .header {
-  height: 7rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .logoContainer {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -46,10 +47,10 @@
   overflow-y: auto;
   height: 85vh;
   background-color: rgb(8 140 140 / 0.03);
+  padding: 1rem;
 }
 
 .home {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   height: 84vh;
@@ -57,15 +58,8 @@
   margin: 0 1rem;
 }
 
-.contactLink {
-  width: 10rem;
-  background-color: #057a7a;
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  border-radius: 8px;
+.homeInfo {
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 860px) {
@@ -74,6 +68,10 @@
     height: 10rem;
     padding-bottom: 1rem;
     align-items: center;
+  }
+
+  .logoContainer {
+    padding-right: 10px;
   }
 
   .home {
@@ -87,7 +85,9 @@
   .content {
     grid-column: 1;
     padding: 0.25rem;
-    height: 75vh
+    height: 75vh;
+    padding: 1rem;
+
   }
 
   .headshotContainer {
