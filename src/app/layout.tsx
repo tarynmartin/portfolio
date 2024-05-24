@@ -3,16 +3,21 @@ import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from 'next'
 import Image from 'next/image';
 import { Fraunces } from 'next/font/google'
-import DataObjectIcon from '@mui/icons-material/DataObject';
+import NavBar from '../components/NavBar/NavBar';
+import tmLogo from '../../public/tmLogo.svg';
 import styles from './page.module.css';
 import './globals.css'
-import NavBar from '../components/NavBar/NavBar';
-import SvgIcon from '@mui/material/SvgIcon';
-import tmLogo from '../../public/tmLogo.svg';
 
 const fraunces = Fraunces({ subsets: ['latin'], display: 'swap' });
 
-export const metadata: Metadata = { title: { template: '%s | Taryn Martin', default: 'Taryn Martin'}, description: 'Home page', }
+export const metadata: Metadata = { 
+  title: { 
+    template: '%s | Taryn Martin',
+    default: 'Taryn Martin'
+  }, 
+  description: 'Home page',
+  keywords: ['web development', 'software development', 'web site', 'create web site', 'Taryn Martin', 'Taryn Martin Web Development', 'Northern Colorado', 'Greeley', 'Fort Collins', 'Loveland'],
+}
 
 export default function RootLayout({
   children,
@@ -24,7 +29,7 @@ export default function RootLayout({
       <body>
         <main className={styles.main}>
           <div className={styles.header}>
-            <Image src={tmLogo} alt="Taryn Martin Logo" width={200} height={100}/>
+            <Image src={tmLogo} alt="Taryn Martin Web Development Logo" width={200} height={100}/>
             <NavBar />
           </div>
           <div className={styles.mainContent}>
