@@ -8,11 +8,12 @@
 }
 
 .header {
-  height: 5rem;
+  height: 6rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .logoContainer {
@@ -68,6 +69,7 @@
     height: 10rem;
     padding-bottom: 1rem;
     align-items: center;
+    gap: 1rem;
   }
 
   .logoContainer {

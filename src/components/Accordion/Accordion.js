@@ -8,7 +8,7 @@ const Accordion =({expanded, setExpanded, info}) => {
     expanded === panel ? setExpanded('') : setExpanded(panel);
   }
   return (
-    <MuiAccordion expanded={expanded === info.panel} onChange={(e) => handleChange(e, info.panel)}>
+    <MuiAccordion expanded={expanded === info.panel} onChange={(e) => handleChange(e, info.panel)} sx={{ color: '#504E4B' }}>
       <MuiAccordionSummary expandIcon={<ArrowDropDownIcon />}>
         {info.summary}
       </MuiAccordionSummary>

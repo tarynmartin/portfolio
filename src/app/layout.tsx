@@ -1,11 +1,14 @@
 import React from 'react'
 import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from 'next'
+import Image from 'next/image';
 import { Fraunces } from 'next/font/google'
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import styles from './page.module.css';
 import './globals.css'
 import NavBar from '../components/NavBar/NavBar';
+import SvgIcon from '@mui/material/SvgIcon';
+import tmLogo from '../../public/tmLogo.svg';
 
 const fraunces = Fraunces({ subsets: ['latin'], display: 'swap' });
 
@@ -21,13 +24,7 @@ export default function RootLayout({
       <body>
         <main className={styles.main}>
           <div className={styles.header}>
-            <div className={styles.logoContainer}>
-              <DataObjectIcon sx={{ fontSize: 90, color: '#057a7a' }}/>
-              <div className={styles.logoHeader}>
-                <h1>Taryn Martin</h1>
-                <h2>Web Development</h2>
-              </div>
-            </div>
+            <Image src={tmLogo} alt="Taryn Martin Logo" width={200} height={100}/>
             <NavBar />
           </div>
           <div className={styles.mainContent}>

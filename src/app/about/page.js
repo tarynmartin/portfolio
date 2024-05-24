@@ -65,7 +65,7 @@ const About = () => {
         <section className={styles.educationSection}>
           {educationInfo.map((info) => {
             return (
-              <Paper elevation={6} key={info.key}>
+              <Paper elevation={6} key={info.key} sx={{ color: '#504E4B' }}>
                 <div className={styles.educationCard}>
                   <h2>{info.school}</h2>
                   <div className={styles.schoolDetails}>
