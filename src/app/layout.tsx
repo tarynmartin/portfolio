@@ -17,6 +17,21 @@ export const metadata: Metadata = {
   }, 
   description: 'Home page',
   keywords: ['web development', 'software development', 'web site', 'create web site', 'Taryn Martin', 'Taryn Martin Web Development', 'Northern Colorado', 'Greeley', 'Fort Collins', 'Loveland'],
+  openGraph: {
+    title: 'Taryn Martin Web Development',
+    type: 'website',
+    locale: 'en_US',
+    description: 'Web Development Services in Northern Colorado and beyond. Specializing in custom web sites and web applications.',
+    url: 'https://taryn-martin.dev',
+    images: [
+      {
+        url: 'https://taryn-martin.dev/opengraph-image.png',
+        width: 200,
+        height: 200,
+        alt: 'Taryn Martin Web Development Logo',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
