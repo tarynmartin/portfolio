@@ -1,7 +1,3 @@
-.aboutContainer {
-  height: 84%;
-}
-
 .aboutHeader {
   font-size: 1.75rem;
   padding-bottom: 1.75rem;
@@ -19,7 +15,6 @@
   align-items: center;
 }
 
-.section,
 .aboutSection {
   display: flex;
   flex-direction: row;

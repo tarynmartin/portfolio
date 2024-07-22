@@ -18,7 +18,7 @@ const About = () => {
   const [expanded, setExpanded] = useState('');
 
   return (
-    <div className={styles.aboutContainer}>
+    <div>
       <h1 className={styles.aboutHeader}>About Me</h1>
       <div className={raleway.className}>
         <section className={styles.aboutSection}>
