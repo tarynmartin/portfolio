@@ -1,5 +1,7 @@
 import React from 'react'
+import dayjs from 'dayjs' 
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from 'next'
 import Image from 'next/image';
 import { Fraunces } from 'next/font/google'
@@ -55,8 +57,14 @@ export default function RootLayout({
               {children}
             </div>
           </div>
+          <div>
+            <footer className={styles.footer}>
+              <p>&copy; {dayjs().year()} Taryn Martin Web Development LLC</p>
+            </footer>
+          </div>
         </main>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
