@@ -5,10 +5,14 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Accordion =({expanded, setExpanded, info}) => {
   const handleChange = (e, panel) => {
-    expanded === panel ? setExpanded('') : setExpanded(panel);
+    if (panel) {
+      expanded === panel ? setExpanded('') : setExpanded(panel);
+    } else { 
+      setExpanded(prevState => !prevState);
+    }
   }
   return (
-    <MuiAccordion expanded={expanded === info.panel} onChange={(e) => handleChange(e, info.panel)} sx={{ color: '#504E4B' }}>
+    <MuiAccordion expanded={info.panel ? expanded === info.panel : expanded} onChange={(e) => handleChange(e, info.panel)} sx={{ color: '#504E4B' }}>
       <MuiAccordionSummary expandIcon={<ArrowDropDownIcon />}>
         {info.summary}
       </MuiAccordionSummary>

@@ -6,6 +6,7 @@ import { Metadata } from 'next'
 import Image from 'next/image';
 import { Fraunces } from 'next/font/google'
 import NavBar from '../components/NavBar/NavBar';
+import Link from 'next/link';
 import tmLogo from '../../public/tmLogo.svg';
 import styles from './page.module.css';
 import './globals.css'
@@ -46,7 +47,9 @@ export default function RootLayout({
       <body>
         <main className={styles.main}>
           <div className={styles.header}>
-            <Image src={tmLogo} alt="Taryn Martin Web Development Logo" width={200} height={100}/>
+            <Link href="/">
+              <Image src={tmLogo} alt="Taryn Martin Web Development Logo" width={200} height={100}/>
+            </Link>
             <NavBar />
           </div>
           <div className={styles.mainContent}>
@@ -63,8 +66,8 @@ export default function RootLayout({
             </footer>
           </div>
         </main>
-        <Analytics />
-        <SpeedInsights />
+        {/* <Analytics />
+        <SpeedInsights /> */}
       </body>
     </html>
   )
