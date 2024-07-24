@@ -52,6 +52,7 @@ export default function RootLayout({
             </Link>
             <NavBar />
           </div>
+          <div className={styles.spacer} aria-hidden></div>
           <div className={styles.mainContent}>
             <div className={styles.headshotContainer}>
               <div className={styles.headshot} />

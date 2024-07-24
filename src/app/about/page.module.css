@@ -9,9 +9,8 @@
 
 .headerContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding-bottom: 1.75rem;
   padding-top: 1rem;
 }
@@ -45,6 +44,10 @@
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.LinkedInIcon {
+  margin-top: 7px
 }
 
 @media screen and (max-width: 860px) {

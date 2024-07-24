@@ -43,8 +43,8 @@ const About = () => {
         </div>
       </div>
       <div className={styles.headerContainer}>
-        <h2 className={styles.header}>Experience & Education Details:</h2>
-        <a href="https://www.linkedin.com/in/tarynmartin919/" target="__blank"><LinkedInIcon color="primary" fontSize="large"/></a>
+        <h2 className={styles.header}>Experience & Education</h2>
+        <a href="https://www.linkedin.com/in/tarynmartin919/" target="__blank"><LinkedInIcon color="primary" fontSize="large" className={styles.LinkedInIcon} /></a>
       </div>
     </div>
   )

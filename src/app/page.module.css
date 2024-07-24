@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 100vh;
+  min-height: 100%;
   overflow: auto;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
   position: fixed;
   background-color: white;
   z-index: 100;
@@ -24,33 +24,39 @@
   gap: 0.5rem;
 }
 
+.spacer {
+  height: 8rem;
+}
+
 .mainContent {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
-  padding-top: 8rem;
   margin: 0 1.5rem;
+  max-height: 81vh;
+  overflow: auto;
 }
 
 .headshotContainer {
   position: relative;
   overflow: hidden;
+  min-height: 81vh;
 }
 
 .headshot {
   background-image: url(./headshot.jpg);
   background-position: center;
   background-size: cover;
-  height: 81vh;
+  min-height: 81vh;
 }
 
 .content {
   grid-column: 2;
-  width: 100%;
+  width: 66vw;
   overflow-y: auto;
   background-color: rgb(8 140 140 / 0.03);
   padding: 2rem;
-  height: 81vh;
+  max-height: 81vh;
 }
 
 .footer {
@@ -62,13 +68,39 @@
 .home {
   display: flex;
   flex-direction: column;
-  height: 76vh;
+  height: 73vh;
   justify-content: center;
   margin: 0 1rem;
+  min-width: 100%;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 3.5rem;
+  margin-left: 3rem;
+}
+
+.questionContainer h2 {
+  font-size: 1.25rem;
+  color: #005757
+}
+
+.subtitleContainer {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #005757;
+  padding-bottom: 2.5rem;
 }
 
 .homeInfo {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.homeBtnContainer {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 860px) {
@@ -90,7 +122,7 @@
   }
 
   .home {
-    height: 70vh
+    height: 70vh;
   }
 
   .mainContent {
@@ -112,9 +144,13 @@
   }
 }
 
-@media screen and (min-height: 860px) {
+@media screen and (max-height: 750px) {
   .headshot,
   .content {
-    height: 95%;
+    height: 81vh;
+  }
+
+  .home {
+    height: 90vh
   }
 }
