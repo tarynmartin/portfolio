@@ -71,7 +71,7 @@
   height: 73vh;
   justify-content: center;
   margin: 0 1rem;
-  min-width: 100%;
+  min-width: 96%;
 }
 
 .questionContainer {
@@ -103,9 +103,32 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-height: 750px) {
+  .home {
+    height: 73vh
+  }
+
+  .subtitleContainer {
+    padding-bottom: 1.5rem;
+  }
+
+  .questionContainer {
+    padding-bottom: 2rem
+  }
+
+  .homeBtnContainer {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
   .main {
     align-items: center;
+    width: 100%;
+  }
+
+  .spacer {
+    height: 11rem;
   }
 
   .header {
@@ -122,35 +145,59 @@
   }
 
   .home {
-    height: 70vh;
+    height: 73vh;
   }
 
   .mainContent {
     grid-template-columns: 1fr;
-    padding-top: 11rem;
     width: 85vw;
   }
 
   .content {
     grid-column: 1;
     padding: 0.25rem;
-    height: 75vh;
     padding: 1rem;
-
+    width: 100%;
   }
 
   .headshotContainer {
     display: none;
   }
+
+  .home {
+    margin: 0;
+  }
+
+  .homeInfo {
+    margin-bottom: 0;
+  }
 }
 
-@media screen and (max-height: 750px) {
-  .headshot,
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  .main {
+    justify-content: space-between;
+  }
+
+  .mainContent {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .content {
-    height: 81vh;
+    width: 48vw;
   }
 
   .home {
-    height: 90vh
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .content {
+    width: 64vw;
+  }
+
+  .home {
+    width: 92%;
+    margin: 0;
   }
 }

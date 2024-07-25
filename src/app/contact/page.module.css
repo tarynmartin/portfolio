@@ -8,6 +8,12 @@
 
 @media screen and (max-width: 860px) {
   .contactContainer {
-    height: 73vh;
+    height: 71vh;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .contactContainer {
+    height: 72vh;
   }
 }
