@@ -1,19 +1,21 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 2rem;
-  min-height: 100vh;
   background-color: white;
-  overflow: hidden;
+  min-height: 100%;
+  overflow: auto;
 }
 
 .header {
-  height: 6rem;
-  margin-top: 1rem;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 1rem;
+  padding: 1rem 2rem 0.5rem 2rem;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
 }
 
 .logoContainer {
@@ -22,54 +24,120 @@
   gap: 0.5rem;
 }
 
+.spacer {
+  height: 8rem;
+}
+
 .mainContent {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
+  margin: 0 1.5rem;
+  max-height: 81vh;
+  overflow: auto;
 }
 
 .headshotContainer {
-  width: 32%;
-  height: 85%;
-  position: absolute;
+  position: relative;
   overflow: hidden;
+  min-height: 81vh;
 }
 
 .headshot {
   background-image: url(./headshot.jpg);
   background-position: center;
   background-size: cover;
-  height: 100%;
+  min-height: 81vh;
 }
 
 .content {
   grid-column: 2;
-  width: 100%;
+  width: 66vw;
   overflow-y: auto;
-  height: 85vh;
   background-color: rgb(8 140 140 / 0.03);
-  padding: 1rem;
+  padding: 2rem;
+  max-height: 81vh;
+}
+
+.footer {
+  font-size: 12px;
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: end;
 }
 
 .home {
   display: flex;
   flex-direction: column;
-  height: 84vh;
+  height: 73vh;
   justify-content: center;
   margin: 0 1rem;
+  min-width: 96%;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 3.5rem;
+  margin-left: 3rem;
+}
+
+.questionContainer h2 {
+  font-size: 1.25rem;
+  color: #005757
+}
+
+.subtitleContainer {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #005757;
+  padding-bottom: 2.5rem;
 }
 
 .homeInfo {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 860px) {
+.homeBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-height: 750px) {
+  .home {
+    height: 73vh
+  }
+
+  .subtitleContainer {
+    padding-bottom: 1.5rem;
+  }
+
+  .questionContainer {
+    padding-bottom: 2rem
+  }
+
+  .homeBtnContainer {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main {
+    align-items: center;
+    width: 100%;
+  }
+
+  .spacer {
+    height: 11rem;
+  }
+
   .header {
     flex-direction: column;
-    height: 10rem;
+    height: 11rem;
     padding-bottom: 1rem;
     align-items: center;
     gap: 1rem;
+    width: 90vw;
   }
 
   .logoContainer {
@@ -77,22 +145,59 @@
   }
 
   .home {
-    height: 74vh
+    height: 73vh;
   }
 
   .mainContent {
     grid-template-columns: 1fr;
+    width: 85vw;
   }
 
   .content {
     grid-column: 1;
     padding: 0.25rem;
-    height: 75vh;
     padding: 1rem;
-
+    width: 100%;
   }
 
   .headshotContainer {
     display: none;
+  }
+
+  .home {
+    margin: 0;
+  }
+
+  .homeInfo {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  .main {
+    justify-content: space-between;
+  }
+
+  .mainContent {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content {
+    width: 48vw;
+  }
+
+  .home {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .content {
+    width: 64vw;
+  }
+
+  .home {
+    width: 92%;
+    margin: 0;
   }
 }

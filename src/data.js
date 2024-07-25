@@ -35,7 +35,6 @@ export const contactTheme = (outerTheme) => createTheme({
 });
 
 export const navBarLinks = [
-  { href: '/', text: 'Home' },
   { href: '/about', text: 'About' },
   { href: '/services', text: 'Services' },
   { href: '/contact', text: 'Contact' }

@@ -12,8 +12,18 @@
 
 .activeLink,
 .link:hover {
-  background-color: #057a7a;
+  background-color: #005757;
   color: white;
   padding: 5px 6px 7px 6px;
   border-radius: 8px;
 }
+
+/* 
+main content hiding under header on whole page scroll
+unable to scroll through content???
+- taking overflow off of main doesn't fix
+- taking padding-top off of mainContent doesn't fix
+- replacing padding-top with margin-top on mainContent doesn't fix
+- hiding overflow on body and adding scroll to mainContent doesn't fix
+make mainContent position fixed???
+*/
