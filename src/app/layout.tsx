@@ -67,8 +67,8 @@ export default function RootLayout({
             </footer>
           </div>
         </main>
-        {/* <Analytics />
-        <SpeedInsights /> */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
